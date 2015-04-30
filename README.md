@@ -50,7 +50,9 @@ A list of files that will be added on your sitemap. It uses [grunt.file.expand](
 
 `String`
 
-In different enviroments, you can set the host to be added **before** the `pages`. Following the example above you can define the host via command line:
+In different enviroments, you can set the host to be added **before** the `pages`.
+
+> Following the example above you can define the host via command line:
 
 	grunt sitemap --host=http://my.local:8080/
 
