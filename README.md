@@ -46,18 +46,18 @@ A list of files that will be added on your sitemap. It uses [grunt.file.expand](
 
 * **Function** this function will get one param, that is a list of urls.
 
-    ```javascript
-    'sitemap': {
-        'test' : {
-            'host' : grunt.option('host') || '',
-            'paths' : ['README.md'],
-            'out' : function(list){
-				//saving on grunt's config to be used by another task
-				grunt.config.set('sitemap',list);
-			}
+```javascript
+'sitemap': {
+    'test' : {
+        'host' : grunt.option('host') || '',
+        'paths' : ['README.md'],
+        'out' : function(list){
+            //saving on grunt's config to be used by another task
+            grunt.config.set('sitemap',list);
         }
     }
-	```
+}
+```
 
 ### **target.host** (optional)
 
