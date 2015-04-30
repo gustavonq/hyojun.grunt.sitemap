@@ -2,7 +2,7 @@
 
 ##About
 
-This grunt task is designed to output a sitemap.xml based on list of files.
+This grunt task is designed to output a sitemap.xml based on file list.
 
 ##Config
 
@@ -19,7 +19,8 @@ grunt.initConfig({
 	}
 });
 ```
-###Where:
+
+Where:
 
 ### sitemap
 
@@ -29,13 +30,13 @@ This task requires a top level config object called: `sitemap`
 
 Every target must have:
 
-* **paths**
+### **target.paths**
 
 `Array`
 
 A list of files that will be added on your sitemap. It uses [grunt.file.expand](http://gruntjs.com/api/grunt.file#grunt.file.expand), so you can set the targets using `dist/**/*.html` instead of adding one by one.
 
-* **out**
+### **target.out**
 
 `String` or `Function`
 
@@ -45,14 +46,13 @@ A list of files that will be added on your sitemap. It uses [grunt.file.expand](
 
 * **Function** this function will get one param, that is a list of urls.
 
-* **host** (optional)
+### **target.host** (optional)
 
 `String`
 
 In different enviroments, you can set the host to be added **before** the `pages`. Following the example above you can define the host via command line:
 
 	grunt sitemap --host=http://my.local:8080/
-
 
 ##How to install
 
@@ -61,3 +61,6 @@ In different enviroments, you can set the host to be added **before** the `pages
 3. create your `sitemap` setup inside your gruntfile.js config.
 4. `grunt sitemap`
 
+##Road map
+
+* add 'ignore' property to create more complex rules
