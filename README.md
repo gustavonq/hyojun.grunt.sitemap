@@ -45,6 +45,7 @@ A list of files that will be added on your sitemap. It uses [grunt.file.expand](
 * **String** the path where your sitemap will be saved.
 
 * **Function** this function will get one param, that is a list of urls.
+    ```javascript
     'sitemap': {
         'test' : {
             'host' : grunt.option('host') || '',
@@ -55,7 +56,7 @@ A list of files that will be added on your sitemap. It uses [grunt.file.expand](
 			}
         }
     }
-
+	```
 
 ### **target.host** (optional)
 
