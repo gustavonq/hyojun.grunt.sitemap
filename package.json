@@ -1,0 +1,26 @@
+{
+  "name": "hyojun.grunt.sitemap",
+  "version": "0.1.0",
+  "description": "grunt task designed to create (output) sitemap.xml based on file list.",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/fbiz/hyojun.grunt.sitemap"
+  },
+  "keywords": [
+    "grunt",
+    "sitemap",
+    "hyojun"
+  ],
+  "author": "igor almeida",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "dependencies": {
+    "jstoxml": "^0.2.3"
+  }
+}
